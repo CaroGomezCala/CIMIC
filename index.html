@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIMIC S.A.S</title>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="icons/bx-menu-alt-right.svg" class="hamburger">
+        <nav class="menu-navegation">
+            <a href="#inicio">Inicio</a>
+            <a href="#info">Quienes somos</a>
+            <a href="#equipo">Equipo Médico</a> 
+            <a href="#reporte">Reporte anual</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contactanos">Contacto</a>
+        </nav>
+        <div class="container head">
+            <img src="img/logo_cimic.png" class="logo">
+            <h1 class="title">Bienvenido a Cirujanos de mano y microcirugia S.A.S</h1>
+            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam!</p>
+        </div>
+    </header>
+    <main>
+        <section class="acercade" id="info">
+            <div class="container">
+                <h2 class="subtitle">Quienes Somos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aliquam
+                </p>
+                <div class="container-info">
+                    <div class="information">
+                        <h3 class="n-info">Nuestra Mision</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fugit
+                        corrupti repellat explicabo eius. Maiores voluptates libero repudiandae modi nobis.</p>
+                    </div>
+                    <div class="information">
+                        <h3 class="n-info">Nuestra vision</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fugit
+                        corrupti repellat explicabo eius. Maiores voluptates libero repudiandae modi nobis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="equipo">
+        <div class="container">
+            <h2 class="subtitle">Equipo Médico</h2>
+            <div class="container-team">
+                <div class="card">
+                    <img src="img/ejemplo.jpeg" alt="Dr. Abril">
+                    <div class="intro">
+                        <h4>Dr. Cesar Augusto Abril Gaona</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, numquam!</p>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img src="img/arroyo.png" alt="Dr. Arroyo">
+                    <div class="intro">
+                        <h4>Dr. Carlos Augusto Arroyo Sanchez</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, numquam!</p>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img src="img/varon.jpeg" alt="Dr. Varon">
+                    <div class="intro">
+                        <h4>Dr. Guillermo Varon Plata</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, numquam!</p>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img src="img/monroy.jpeg" alt="Dr. Monroy">
+                    <div class="intro">
+                        <h4>Dr. Helman Monroy Zambrano</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, numquam!</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="report" id="reporte">
+            <div class="container">
+                <h2 class="subtitle">Reporte Anual</h2>
+                <div class="container-report">
+                    <p>A continuacion podrás leer nuestro informe anual</p>
+                    <embed src="docs/PDF_TEST.pdf" type="application/pdf" class="pdf">
+                </div>
+            </div>
+        </section>
+        <section class="servicios" id="servicios">
+            <h2 class="subtitle">Nuestros servicios</h2>
+            <div class="container-servicios">
+                <img src="img/surgery.jpg">
+                <div class="checkList-servicios">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Cirugia de mano</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fugit
+                        corrupti repellat explicabo eius. Maiores voluptates libero repudiandae modi nobis.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Cirugia de mano</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fugit
+                        corrupti repellat explicabo eius. Maiores voluptates libero repudiandae modi nobis.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Cirugia de mano</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fugit
+                        corrupti repellat explicabo eius. Maiores voluptates libero repudiandae modi nobis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" container form-contacto" id="contactanos">
+            <form action="" class="formulario" id="form">
+                <h1 class="subtitle">Contacto</h1>
+                <label for="">Nombre:</label>
+                <input name="name" required type="text" id="name" placeholder="Nombre"><br>
+                <label for="">Correo electronico: </label>
+                <input name="email" required type="text"  id="email" placeholder="Correo electronico"><br>
+                <label for="">Mensaje: </label>
+                <input name="message" required type="text" id="message" placeholder="Escribe aqui tu mensaje..."><br>
+                <button class ="btn" type="submit">Enviar Mensaje</button>
+            </form>
+            <a href="mailto:lcgk.021@gmail.com" id="toMail">mail</a>
+        </section>
+    </main>
+    <footer id="contactos">
+        <div class="container footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Cirujanos de Mano y Microcirugia CIMIC S.A.S</h2>
+                <p>Somos Especialistas en Ortopedia de Mano<br>Clinica Foscal - Foscal Internacional</p>            
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161,140,209, 0.404), rgba(251,193,234,0.404)), url(img/vista_rx_mano.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hamburger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0.5);
+}
+
+.menu-navegation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+   /* background-image: linear-gradient(135deg,#A697D6 0, #8EC6FA 100%);*/
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0,0,0.5);
+    transition: transform .3s ease-in-out;
+    transform: translate(100%);
+}
+
+.menu-navegation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+.container p{
+    margin-bottom: 20px;
+}
+
+
+.head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #111;
+    text-align: center;
+}
+
+.logo {
+    position: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 25%;    
+}
+
+
+.title {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.copy {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.spread {
+    transform: translate(0);
+}
+
+/*Estilo de los servicios   #FF5733*/
+
+.subtitle {
+    text-align: center;
+    font-weight: 400;
+    color: #337DFF;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.servicios {
+    background: whitesmoke;
+}
+
+.container-servicios {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ .container-servicios img {
+    width: 40%;
+ }
+
+ .checkList-servicios {
+    width: 45%;
+ }
+
+ .service {
+    margin-bottom: 20px;
+ }
+
+ .n-service {
+    margin-bottom: 7px;
+    color: #337DFF;
+ }
+
+ .number {
+    display: inline-block;
+    background-image: linear-gradient(to top,#A697D6 0, #337DFF 100% );
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+ }
+
+ /*Estilo Equipo medico*/
+
+  .team {
+    background-color: whitesmoke;
+ }
+
+ .container-team {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ .container-team .card {
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 5 5 20px black;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25;
+    object-fit: cover;
+    display: block;
+ }
+
+ .container-team .card:hover {
+    cursor: pointer;
+ }
+
+ .container-team .card:hover .intro {
+    height: 220px;
+    bottom: 240px;
+    background: black;
+ }
+
+ .container-team .card:hover p {
+    opacity: 1;
+    visibility: visible;
+ }
+
+ .container-team .card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+ }
+
+ .container-team .card img {
+    width: 300px;
+    height: 250px;
+    border-radius: 3px;
+    transition: .5s;
+ }
+
+ .container-team .intro {
+    height: 70px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: flex;
+    bottom: 240px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+ } 
+
+ .container-team .card h4 {
+    margin: 10px;
+    font-size: 20px;
+ }
+
+ .container-team .card p {
+    font-size: 15px;
+    margin: 8px;
+    visibility: hidden;
+    opacity: 0;
+ }
+
+ 
+ /*
+ Estilo Informacion de la empresa
+*/
+.acercade {
+    background: white;
+}
+
+.container-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.n-info {
+    margin-bottom: 7px;
+    color: #337DFF;
+ }
+
+ .information {
+    margin-bottom: 20px;
+ }
+
+ /* Estilo pdf*/
+.container-report {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-report p{
+    margin-bottom: 20px;
+}
+
+.pdf {
+    width: 80%;
+    height: 500px; 
+}
+
+/*Estilo Formulario*/
+.formulario {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0.1);
+    position: relative;
+    border-radius: 7px;
+}
+input, label, textarea{
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100px;
+}
+
+
+.fomulario_input {
+    margin: auto;
+    width: 100%;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    font-size: 17px;
+}
+ 
+.btn {
+    width: 100%;
+    border-radius: 20px;
+    background: #337DFF;
+    border: 0;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#toMail {
+    opacity: 0;
+}
+
+ /*Footer*/
+
+ footer {
+    background-color: #337DFF;
+    padding-bottom: 0.1px;
+ }
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us {
+    width: 60%;
+    color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.brand {
+    font-weight: 600;
+    font-size: 30px;
+    align-content: center;
+}
+
+.contact-us p{
+    font-weight: 500;
+    align-content: center;
+}
+
+
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px) {
+    .menu-navegation {
+        width: 50vw;
+    }
+    .title {
+        font-size: 40px;
+    }
+
+    .logo{
+
+        border-radius: 25%; 
+    }
+    .container-servicios img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checkList-servicios{
+        width: 80%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .pdf {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width:500px){
+    .menu-navegation{
+        width: 65%;
+    }
+    .hamburger{
+        top:20px;
+        right: 20px;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .pdf {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+}
